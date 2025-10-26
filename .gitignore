@@ -1,0 +1,45 @@
+# Node modules
+/node_modules
+
+# Composer vendor
+/vendor
+
+# Laravel storage & logs
+/public/storage
+/storage/*.key
+/storage/framework/cache/data
+/storage/logs
+/storage/debugbar
+/storage/*.sqlite
+/bootstrap/cache/*.php
+
+# Environment files
+.env
+.env.backup
+.env.local
+.env.*.backup
+
+# Npm/Yarn logs
+npm-debug.log
+yarn-error.log
+pnpm-debug.log
+
+# PHPUnit
+.phpunit.result.cache
+
+# IDEs
+/.idea
+/.vscode
+
+# Homestead
+Homestead.json
+Homestead.yaml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Vite / Node build
+/node_modules
+/public/hot
+/public/build

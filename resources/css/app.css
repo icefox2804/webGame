@@ -1,0 +1,638 @@
+/* ============================================
+   HEADER STYLES - Gaming Theme
+   ============================================ */
+
+/* Main Header */
+.main-header {
+    background-color: #0e0e0e;
+    position: relative;
+    z-index: 1000;
+}
+
+/* Main Navigation */
+.main-nav {
+    background-color: #0e0e0e;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 2rem 0 !important;
+    position: relative;
+    z-index: 1000;
+}
+
+/* Nav Icon Sections */
+.nav-icon-left,
+.nav-icon-right {
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Nav Icons (Search & Fullscreen) */
+.nav-icon-btn {
+    color: #ffffff;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    
+}
+
+.nav-icon-btn:hover {
+    color: #ff0044;
+    background-color: rgba(255, 0, 68, 0.15);
+    border-color: rgba(255, 0, 68, 0.3);
+    transform: scale(1.05);    
+    box-shadow: 0 0 20px rgba(255, 0, 68, 0.4);
+}
+
+.nav-icon-btn i.fas.fa-expand:hover {
+    transition: all 0.3s ease;
+    transform: scale(1.05) rotate(45deg);
+}
+
+/* Center Group: Nhóm Menu Trái + Logo + Menu Phải */
+.nav-center-group {
+    gap: 2rem;
+    flex: 0 1 auto;
+}
+
+/* Nav Sections - Left & Right */
+.nav-section-left,
+.nav-section-right {
+    flex: 0 0 auto;
+}
+
+/* Social Links */
+.social-link {
+    color: #ffffff;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    transition: all 0.3s ease;
+    font-size: 13px;
+}
+
+.social-link:hover {
+    color: #ff0044;
+    transform: translateY(-2px);
+}
+
+/* Tagline */
+.tagline {
+    color: #888;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    text-transform: lowercase;
+    white-space: nowrap;
+}
+
+/* Navigation Links */
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    padding: 0.5rem 1.5rem !important;
+    position: relative;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #ffffff !important;
+}
+
+/* Red Underline Effect on Hover */
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #ff0044, #ff0044);
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    width: 85%;
+}
+
+/* Center Logo in Navigation */
+.nav-logo img {
+    filter: drop-shadow(0 0 15px rgba(255, 0, 68, 0.4));
+    transition: all 0.3s ease;
+}
+
+.nav-logo:hover img {
+    filter: drop-shadow(0 0 25px rgba(255, 0, 68, 0.7));
+    transform: scale(1.05);
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    background-color: #1a1a1a !important;
+    border: 2px solid rgba(255, 0, 68, 0.3) !important;
+    border-radius: 0 !important;
+    margin-top: 0 !important;
+    padding: 0.5rem 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.dropdown-item {
+    color: #ffffff !important;
+    padding: 0.7rem 1.5rem;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(255, 0, 68, 0.2) !important;
+    color: #ff0044 !important;
+    padding-left: 2rem;
+    transform: translateX(5px);
+}
+
+/* Dropdown Toggle Arrow */
+.dropdown-toggle::after {
+    border: none;
+    content: '\f078';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    margin-left: 0.5rem;
+    font-size: 10px;
+    transition: transform 0.3s ease;
+}
+
+.dropdown-toggle:hover::after {
+    transform: translateY(2px);
+}
+
+/* Enable Dropdown on Hover */
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Dropdown Divider */
+.dropdown-divider {
+    border-color: rgba(255, 0, 68, 0.3);
+    margin: 0.5rem 0;
+}
+
+/* Dropdown Item Form Button */
+.dropdown-item button.dropdown-item {
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+}
+
+/* Icon trong menu item */
+.nav-link i {
+    font-size: 14px;
+}
+
+.dropdown-item i {
+    width: 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+    .main-nav {
+        padding: 1rem 0 !important;
+    }
+    
+    .navbar-collapse {
+        margin-top: 1rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding-top: 1rem;
+    }
+    
+    .navbar-collapse > div {
+        flex-direction: column !important;
+    }
+    
+    .nav-icon-left,
+    .nav-icon-right {
+        position: absolute;
+        top: 0.5rem;
+    }
+    
+    .nav-icon-left {
+        left: 1rem;
+    }
+    
+    .nav-icon-right {
+        right: 4rem;
+    }
+    
+    .nav-center-group {
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100%;
+    }
+    
+    .nav-section-left,
+    .nav-section-right {
+        width: 100%;
+        align-items: center !important;
+        text-align: center;
+        margin: 1rem 0;
+    }
+    
+    .nav-section-left > div,
+    .nav-section-right > div {
+        justify-content: center !important;
+    }
+    
+    .navbar-nav {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    
+    .nav-logo {
+        margin: 1.5rem 0 !important;
+    }
+}
+
+
+/*
+CAROUSEL VIDEO
+
+*/
+
+
+
+
+
+
+
+/* ============================================
+   PRODUCT CARD - Gaming Theme
+   ============================================ */
+.product-card {
+    background-color: #1a1a1a !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    transition: all 0.4s ease;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(255, 0, 68, 0.3);
+    border-color: rgba(255, 0, 68, 0.5) !important;
+}
+
+/* Product Image Wrapper */
+.product-image-wrapper {
+    position: relative;
+    height: 280px;
+    background-color: #0e0e0e;
+}
+
+.product-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-image-wrapper img {
+    transform: scale(1.1);
+}
+
+/* Product Badge */
+.product-badge {
+    top: 10px;
+    right: 10px;
+    background-color: #ff0044;
+    color: #ffffff;
+    padding: 6px 14px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    z-index: 2;
+    border-radius: 2px;
+    box-shadow: 0 4px 15px rgba(255, 0, 68, 0.5);
+}
+
+/* Product Overlay */
+.product-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.product-card:hover .product-overlay {
+    opacity: 1;
+}
+
+.btn-overlay {
+    padding: 12px 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+}
+
+.product-card:hover .btn-overlay {
+    transform: translateY(0);
+}
+
+/* Product Body */
+.product-card .card-body {
+    background-color: #1a1a1a;
+    padding: 1.5rem;
+}
+
+/* Product Category */
+.product-category .badge {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 5px 10px;
+}
+
+/* Product Title */
+.product-card .card-title {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+    color: #ffffff !important;
+}
+
+/* Product Price */
+.product-price {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* Button Game Style */
+.btn-game {
+    border: 2px solid #ff0044;
+    color: #ff0044;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-game:hover {
+    background-color: #ff0044;
+    border-color: #ff0044;
+    color: #ffffff;
+    box-shadow: 0 5px 20px rgba(255, 0, 68, 0.5);
+    transform: translateY(-2px);
+}
+
+/* Pagination Gaming Style */
+.pagination {
+    gap: 5px;
+}
+
+.pagination .page-link {
+    background-color: #1a1a1a;
+    border: 2px solid #333;
+    color: #ffffff;
+    padding: 12px 18px;
+    font-weight: 700;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    border-radius: 0;
+}
+
+.pagination .page-link:hover {
+    background-color: #ff0044;
+    border-color: #ff0044;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 0, 68, 0.5);
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #ff0044;
+    border-color: #ff0044;
+    color: #ffffff;
+    z-index: 1;
+    box-shadow: 0 5px 15px rgba(255, 0, 68, 0.5);
+}
+
+.pagination .page-item.disabled .page-link {
+    background-color: #0e0e0e;
+    border-color: #222;
+    color: #666;
+}
+
+/* ============================================
+   FILTER SECTION - Gaming Theme
+   ============================================ */
+.card.bg-dark {
+    background-color: #1a1a1a !important;
+    border: 1px solid rgba(255, 0, 68, 0.2) !important;
+}
+
+.card.bg-dark .card-body {
+    background-color: #1a1a1a !important;
+}
+
+/* Form Controls Gaming Style */
+.bg-dark .form-control,
+.bg-dark .form-select {
+    background-color: #0e0e0e;
+    border: 2px solid #333;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.bg-dark .form-control:focus,
+.bg-dark .form-select:focus {
+    background-color: #1a1a1a;
+    border-color: #ff0044;
+    color: #ffffff;
+    box-shadow: 0 0 15px rgba(255, 0, 68, 0.3);
+}
+
+.bg-dark .form-control::placeholder {
+    color: #666;
+}
+
+/* Search Button */
+.bg-dark .btn-primary {
+    background-color: #ff0044;
+    border: 2px solid #ff0044;
+    color: #ffffff;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.bg-dark .btn-primary:hover {
+    background-color: #cc0036;
+    border-color: #cc0036;
+    box-shadow: 0 5px 20px rgba(255, 0, 68, 0.5);
+    transform: translateY(-2px);
+}
+
+/* Page Titles */
+h1 {
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 20px rgba(255, 0, 68, 0.3);
+}
+
+/* Alert Gaming Style */
+.alert-warning.bg-dark {
+    background-color: #1a1a1a !important;
+    border-left: 4px solid #ffc107;
+}
+
+/* ============================================
+   BREADCRUMB - Gaming Theme
+   ============================================ */
+.breadcrumb.bg-dark {
+    background-color: #1a1a1a !important;
+    border: 1px solid rgba(255, 0, 68, 0.2);
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: #666;
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.breadcrumb-item a:hover {
+    color: #ff0044 !important;
+    text-shadow: 0 0 10px rgba(255, 0, 68, 0.5);
+}
+
+/* ============================================
+   PRODUCT DETAIL SECTION
+   ============================================ */
+.product-detail-image {
+    background-color: #1a1a1a !important;
+    border: 1px solid rgba(255, 0, 68, 0.2);
+    transition: all 0.3s ease;
+}
+
+.product-detail-image:hover {
+    border-color: rgba(255, 0, 68, 0.5);
+    box-shadow: 0 10px 30px rgba(255, 0, 68, 0.2);
+}
+
+.product-detail-image img {
+    transition: transform 0.5s ease;
+}
+
+.product-detail-image:hover img {
+    transform: scale(1.05);
+}
+
+.product-detail-section .bg-dark {
+    background-color: #1a1a1a !important;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.product-detail-section h1,
+.product-detail-section h3,
+.product-detail-section h5 {
+    text-shadow: 0 0 20px rgba(255, 0, 68, 0.3);
+}
+
+/* Button Mua ngay */
+.btn-danger.btn-lg {
+    transition: all 0.3s ease;
+}
+
+.btn-danger.btn-lg:hover {
+    background-color: #cc0036;
+    border-color: #cc0036;
+    box-shadow: 0 10px 30px rgba(255, 0, 68, 0.5);
+    transform: translateY(-3px);
+}
+
+/* ============================================
+   LOGIN & REGISTER FORM
+   ============================================ */
+.login-card {
+    background-color: #1a1a1a !important;
+    border: 2px solid rgba(255, 0, 68, 0.3) !important;
+}
+
+.login-card .form-control {
+    background-color: #0e0e0e !important;
+    border: 2px solid #333 !important;
+    color: #ffffff !important;
+    transition: all 0.3s ease;
+}
+
+.login-card .form-control:focus {
+    background-color: #1a1a1a !important;
+    border-color: #ff0044 !important;
+    box-shadow: 0 0 15px rgba(255, 0, 68, 0.3) !important;
+}
+
+.login-card .form-check-input {
+    background-color: #0e0e0e;
+    border-color: #333;
+}
+
+.login-card .form-check-input:checked {
+    background-color: #ff0044;
+    border-color: #ff0044;
+}
+
+.login-card .btn-danger {
+    transition: all 0.3s ease;
+}
+
+.login-card .btn-danger:hover {
+    box-shadow: 0 5px 20px rgba(255, 0, 68, 0.5);
+    transform: translateY(-2px);
+}
+
+.login-card .btn-outline-danger {
+    border: 2px solid #ff0044;
+    color: #ff0044;
+    transition: all 0.3s ease;
+}
+
+.login-card .btn-outline-danger:hover {
+    background-color: #ff0044;
+    border-color: #ff0044;
+    color: #ffffff;
+    box-shadow: 0 5px 20px rgba(255, 0, 68, 0.5);
+}
