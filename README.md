@@ -447,6 +447,26 @@ Project này được phát hành dưới [MIT License](https://opensource.org/l
 
 ---
 
+## Một số hình ảnh của dự án
+
+<img width="1920" height="5714" alt="461719a7-8104-4339-a2eb-283177f92c22" src="https://github.com/user-attachments/assets/1678e61a-a0ea-4dfa-845e-df70c406f66f" />
+<img width="1920" height="2664" alt="387535a3-e067-4878-89df-a63c9abfefba" src="https://github.com/user-attachments/assets/32bd8c1d-16ca-40b5-918d-66ebb6b4c4de" />
+<img width="1920" height="1317" alt="6063b3ee-d5eb-4617-8989-1c32a6a79f91" src="https://github.com/user-attachments/assets/4328e9bd-0c46-4688-8595-641d62c902aa" />
+<img width="1920" height="1089" alt="c640d7c4-06c1-444b-8b97-356177da8b36" src="https://github.com/user-attachments/assets/0abcfb1a-69c1-4fa6-bbe3-8ac1e6211863" />
+<img width="1920" height="1381" alt="6ac2fadc-c90c-4da0-a699-9df2f81b0c8c" src="https://github.com/user-attachments/assets/7a0be38c-8f9a-4436-a016-3a087d02e444" />
+<img width="1920" height="2185" alt="9b402c42-c669-4264-b65d-eddc264f94f9" src="https://github.com/user-attachments/assets/f31e7c1a-161a-4219-8104-9dbef8fb6861" />
+- Dasboard
+<img width="1920" height="1725" alt="1b55b8de-264c-4984-8ced-1d0d13c0c800" src="https://github.com/user-attachments/assets/82ad2a72-61db-4988-a644-fbceefe49dff" />
+<img width="1920" height="911" alt="89868dfd-3177-4588-9f76-cd5a0744997f" src="https://github.com/user-attachments/assets/94651a00-20f9-42c4-8644-dce48d619185" />
+<img width="1920" height="911" alt="19842517-4624-4ea2-b6cc-937c55f9e2a5" src="https://github.com/user-attachments/assets/ed6d776f-92d0-4a4d-b3ac-d2e1ab254092" />
+<img width="1920" height="1175" alt="7e2a06ec-7b13-4184-b58a-e3cab2ad343c" src="https://github.com/user-attachments/assets/f28ad68f-a388-4869-86d2-822b2d95b9dd" />
+
+
+- 
+
+
+
+
 **Made with ❤️ by Lê Tấn Bửu**
 
 *Cập nhật lần cuối: Tháng 10, 2025*
